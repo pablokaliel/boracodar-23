@@ -3,7 +3,7 @@ import { Container, Card, CircleColor, DivSetting, Settings, DivColor, Color, Di
 import { MdOutlineColorLens, MdOutlineBrightness6, MdOutlineContrast,} from "react-icons/md";
 import { AiOutlineLoading } from "react-icons/ai";
 import { GoSignOut } from "react-icons/go";
-import { GrPaint } from "react-icons/gr";
+import { LuPaintbrush } from "react-icons/lu";
 
 function Home() {
   const [color, setColor] = useState("#0084ff");
@@ -150,7 +150,7 @@ function Home() {
                 <AiOutlineLoading size={20} className="loading-icon" />
               </div>
             ) : (
-              <GrPaint size={24} />
+              <LuPaintbrush size={24} />
             )}
           </button>
         </div>

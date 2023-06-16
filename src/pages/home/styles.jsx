@@ -3,9 +3,11 @@ import { styled } from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   .cart-open {
     display: flex;
     flex-direction: column;
@@ -16,8 +18,8 @@ export const Container = styled.div`
   .open {
     width: 60px;
     height: 60px;
-    border-radius: 100%;
 
+    border-radius: 100%;
     border: none;
     background-color: #151515;
     color: #fff;
@@ -25,6 +27,7 @@ export const Container = styled.div`
 
     transition: all 0.3s;
   }
+
   .loading-icon {
     margin-right: 5px;
     animation: spin 1s infinite linear;
@@ -50,34 +53,30 @@ export const DivSignOut = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+
   button {
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
     height: 40px;
-    width: 300px;
-    display: flex;
+    width: 100%;
+
+    color: #fff;
     background: #18181b;
     border: none;
-    align-items: center;
     gap: 8px;
-    font-size: 16px;
-    /* color: #aa2222; */
-    width: 100%;
   }
 `;
-
-
 
 export const CircleColor = styled.div`
   width: 100%;
   height: 346px;
+
   div {
     height: 100%;
     width: 100%;
 
     opacity: 0.65;
-
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
   }
@@ -86,13 +85,16 @@ export const CircleColor = styled.div`
 export const DivSetting = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 55px 55px 55px;
-  width: 100%;
   justify-content: center;
+  
+  width: 100%;
+  padding: 0px 55px 55px 55px;
+
   h1 {
+    width: 100%;
     margin-top: 105px;
     margin-bottom: 90px;
-    width: 100%;
+
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
@@ -113,17 +115,14 @@ export const DivColor = styled.div`
 `;
 
 export const Color = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   height: 7px;
   width: 100%;
-  input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    appearance: none;
-    box-shadow: none;
-  }
+  
+  border-radius: 12px;
   background: linear-gradient(
     90deg,
     #ff0000 5.21%,
@@ -136,10 +135,17 @@ export const Color = styled.div`
     #ff00c7 83.53%,
     #ff0000 94.61%
   );
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+    appearance: none;
+    box-shadow: none;
+  }
 `;
 
 export const DivBrightness = styled.div`
@@ -149,13 +155,16 @@ export const DivBrightness = styled.div`
 `;
 
 export const Brightness = styled.div`
-  height: 5px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  height: 5px;
+  width: 100%;
+
+  background-color: #fff;
+  border-radius: 12px;
+
   input {
     width: 100%;
     height: 100%;
@@ -169,13 +178,16 @@ export const DivContrast = styled.div`
 `;
 
 export const Contrast = styled.div`
-  height: 5px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  height: 5px;
+  width: 100%;
+
+  background-color: #fff;
+  border-radius: 12px;
+
   input {
     width: 100%;
     height: 100%;
