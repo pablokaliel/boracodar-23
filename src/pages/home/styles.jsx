@@ -76,7 +76,7 @@ export const CircleColor = styled.div`
     height: 100%;
     width: 100%;
 
-    opacity: 0.65;
+
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
   }
