@@ -30,10 +30,6 @@ function Home() {
     }, 2000);
   };
 
-  const toggleCartVisibility = () => {
-    setCartVisible(!cartVisible);
-  };
-
   const handleColorChange = (event) => {
     event.target.style.boxShadow = `0 ${getAdjustedColor()}`;
     setColor(event.target.value);
@@ -139,7 +135,7 @@ function Home() {
         </Card>
       ) : (
         <div className="cart-open">
-          <span>clique para ajustar a iluminaação:</span>
+          <span>clique para ajustar a iluminação:</span>
           <button
             title="btn-function"
             className="open"

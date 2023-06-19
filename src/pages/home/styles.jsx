@@ -23,8 +23,11 @@ export const Container = styled.div`
     border: none;
     background-color: #151515;
     color: #fff;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
 
+    &:hover {
+      box-shadow: 6px 6px 16px rgb(0 0 0 / 42%);
+      background: #0c0c0c;
+    }
     transition: all 0.3s;
   }
 
@@ -76,7 +79,6 @@ export const CircleColor = styled.div`
     height: 100%;
     width: 100%;
 
-
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
   }
@@ -86,7 +88,7 @@ export const DivSetting = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   width: 100%;
   padding: 0px 55px 55px 55px;
 
@@ -119,27 +121,33 @@ export const Color = styled.div`
   align-items: center;
   justify-content: center;
 
-  height: 7px;
+  height: 5px;
   width: 100%;
-  
+  background: #fff;
   border-radius: 12px;
-  background: linear-gradient(
-    90deg,
-    #ff0000 5.21%,
-    #ff8a00 16.48%,
-    #ffe600 27.74%,
-    #14ff00 39.35%,
-    #00a3ff 49.37%,
-    #0500ff 61.18%,
-    #ad00ff 72.26%,
-    #ff00c7 83.53%,
-    #ff0000 94.61%
-  );
 
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      #ff0000 5.21%,
+      #ff8a00 16.48%,
+      #ffe600 27.74%,
+      #14ff00 39.35%,
+      #00a3ff 49.37%,
+      #0500ff 61.18%,
+      #ad00ff 72.26%,
+      #ff00c7 83.53%,
+      #ff0000 94.61%
+    );
+  }
+
+  transition: all 0.3s ease-in-out;
   input {
     width: 100%;
     height: 100%;
+    border-radius: 12px;
 
+    opacity: 0;
     border: none;
     outline: none;
     background: transparent;
@@ -152,6 +160,48 @@ export const DivBrightness = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  input {
+    width: 100%;
+
+    border-radius: 12px;
+    border: none;
+    color: inherit;
+    outline: none;
+    -webkit-appearance: none;
+
+    transition: all 0.3s ease-in-out;
+
+    &::-webkit-slider-thumb {
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+
+      appearance: none;
+      background: #151515;
+      box-shadow: 0px 3.33333px 6.66667px rgba(31, 41, 55, 0.06),
+        0px 6.66667px 10px rgba(31, 41, 55, 0.1);
+      border: 1.5px solid #ffffff;
+      border-radius: 50%;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #8b03fb;
+        border: 1.5px solid #ffffff;
+      }
+    }
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(5, 5, 5, 1) 27%,
+        rgba(107, 107, 107, 1) 69%,
+        rgba(255, 255, 255, 1) 97%
+      );
+    }
+  }
 `;
 
 export const Brightness = styled.div`
@@ -166,6 +216,7 @@ export const Brightness = styled.div`
   border-radius: 12px;
 
   input {
+    border-radius: 12px;
     width: 100%;
     height: 100%;
   }
@@ -175,6 +226,50 @@ export const DivContrast = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
+
+  input {
+    width: 100%;
+
+    border-radius: 12px;
+    border: none;
+    color: inherit;
+    -webkit-appearance: none;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &::-webkit-slider-thumb {
+      width: 16px;
+      height: 16px;
+
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      background: #151515;
+      box-shadow: 0px 3.33333px 6.66667px rgba(31, 41, 55, 0.06),
+        0px 6.66667px 10px rgba(31, 41, 55, 0.1);
+      border: 1.5px solid #ffffff;
+      border-radius: 50%;
+      cursor: pointer;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: #8b03fb;
+        border: 1.5px solid #ffffff;
+      }
+    }
+
+    &:hover {
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(5, 5, 5, 1) 27%,
+        rgba(107, 107, 107, 1) 69%,
+        rgba(255, 255, 255, 1) 97%
+      );
+    }
+  }
 `;
 
 export const Contrast = styled.div`
