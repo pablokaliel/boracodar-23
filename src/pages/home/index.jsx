@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Card, CircleColor, DivSetting, Settings, DivColor, Color, DivBrightness, Brightness, DivContrast, Contrast,} from "./styles";
-import { MdOutlineColorLens, MdOutlineBrightness6, MdOutlineContrast,} from "react-icons/md";
+import {CircleHalf, Sun, Palette} from '@phosphor-icons/react'
 
 function Home() {
 
@@ -45,7 +45,9 @@ function Home() {
 
           <Settings>
             <DivColor>
-              <MdOutlineColorLens size={25} />
+              <Palette size={25}  style={{
+              color: `${colorStyle.color}`
+            }}/>
               <Color>
                 <input
                   type="range"
@@ -58,7 +60,7 @@ function Home() {
             </DivColor>
 
             <DivBrightness>
-              <MdOutlineBrightness6 size={25} />
+              <Sun size={25} />
               <Brightness>
                 <input
                   type="range"
@@ -69,7 +71,7 @@ function Home() {
             </DivBrightness>
 
             <DivContrast>
-              <MdOutlineContrast size={25} />
+              <CircleHalf size={25} />
               <Contrast>
                 <input
                   type="range"

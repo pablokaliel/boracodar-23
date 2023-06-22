@@ -17,7 +17,7 @@ O Desafio consiste em reproduzir o layout onde simula uma interface de tela onde
 <br>
 
 <p align="center">
-  <img src="https://github.com/pablokaliel/boracodar-23/assets/104238801/0b741019-821b-48ee-b303-dc903762b6cf" width="100%">
+  <img src="https://github.com/pablokaliel/pablokaliel/assets/104238801/c015e07e-3524-4ff0-afa0-2ce0d0038717" width="100%">
 </p>
 
 ## 🚀 Tecnologias

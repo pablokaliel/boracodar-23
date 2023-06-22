@@ -13,16 +13,19 @@ export const Card = styled.div`
   background: #151515;
   overflow: hidden;
   border-radius: 12px;
+  position: relative;
+  height: 800px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
 
-  @media (max-width: 770px) {
-    height: 100%;
-    overflow: auto;
-  }
 `;
 
 export const CircleColor = styled.div`
-  width: 100%;
-  height: 346px;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top:-380px;
 
   div {
     height: 100%;
@@ -46,14 +49,14 @@ export const DivSetting = styled.div`
   }
 
   h1 {
-    margin-top: 105px;
+    margin-top: 200px;
     margin-bottom: 90px;
     font-size: 34px;
     font-weight: bold;
     animation: pulse 2s infinite;
 
     @media (max-width: 770px) {
-      margin-top: 90px;
+      margin-top: 120px;
       margin-bottom: 80px;
       font-size: 30px;
     }
